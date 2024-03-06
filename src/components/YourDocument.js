@@ -11,7 +11,7 @@ export default function YourDocument() {
   useEffect(() => {
     if (client) {
       // Set a document ID
-      client.setDocumentId('unique-demo-id');
+      client.setDocumentId('asana-velt-demo');
       const selectionElement = client.getSelectionElement();
       selectionElement.enableLiveSelection();
 
