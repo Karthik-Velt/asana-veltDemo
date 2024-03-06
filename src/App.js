@@ -6,7 +6,7 @@ function App() {
 
 
   return (
-    <VeltProvider apiKey="j3AwoBkuQMTEgeqrmPve">
+    <VeltProvider apiKey="LGZQBMcI0IqZdaNGgwF3">
       <VeltHuddle/>
       <VeltCursor />
       <VeltComments textMode={true} sidebarButtonOnCommentDialog={true} autoCategorize={true}/>
