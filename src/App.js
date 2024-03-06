@@ -9,7 +9,7 @@ function App() {
     <VeltProvider apiKey="LGZQBMcI0IqZdaNGgwF3">
       <VeltHuddle/>
       <VeltCursor />
-      <VeltComments textMode={true} sidebarButtonOnCommentDialog={true} autoCategorize={true}/>
+      <VeltComments textMode={true} sidebarButtonOnCommentDialog={true} autoCategorize={true} popoverMode={true}/>
       <VeltCommentsSidebar />
       <YourAuthComponent/>
       <YourDocument/>
