@@ -1,4 +1,4 @@
-/*! CSS Used from: https://d3ki9tyy5l5ruj.cloudfront.net/compressed/build/bundles/c2b6541f5ec3d406a645fc08d4723a0c9ec9dea4/apps/asana/css/themes/root.css */
+/*! CSS Used from: https://d3ki9tyy5l5ruj.cloudfront.net/compressed/build/bundles/725c132fa5b89f937ded9794ba820f7212540bbb/apps/asana/css/themes/root.css */
 body,
 iframe,
 h1,
@@ -9,7 +9,6 @@ li,
 label,
 nav,
 section,
-input,
 textarea {
   border: 0;
   font-family: inherit;
@@ -2673,13 +2672,6 @@ a:hover {
     --color-promo-shroud: rgba(66, 66, 68, 0.5);
   }
 }
-.ScreenReaderOnly {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-}
 .Icon {
   flex: 0 0 auto;
   height: 16px;
@@ -2743,7 +2735,6 @@ svg:not(:root) {
   overflow: hidden;
 }
 button,
-input,
 textarea {
   color: inherit;
   font: inherit;
@@ -2757,9 +2748,6 @@ button {
 }
 button {
   cursor: pointer;
-}
-input {
-  line-height: normal;
 }
 textarea {
   overflow: auto;
@@ -2996,32 +2984,6 @@ a:hover {
   .ThemeableRectangularButtonPresentation-leftIcon {
   margin-right: 0;
 }
-.PrimaryButton.PrimaryButton--standardTheme.ThemeableRectangularButtonPresentation {
-  background: var(--color-primary-background-strong);
-  border-color: var(--color-primary-background-strong);
-  color: var(--color-primary-text-strong);
-  fill: var(--color-primary-icon-strong);
-}
-.PrimaryButton.PrimaryButton--standardTheme.ThemeableRectangularButtonPresentation--isEnabled:hover {
-  background: var(--color-primary-background-strong-hover);
-  border-color: var(--color-primary-background-strong-hover);
-  color: var(--color-primary-text-strong);
-  fill: var(--color-primary-icon-strong);
-}
-.PrimaryButton.PrimaryButton--standardTheme.ThemeableRectangularButtonPresentation--isEnabled:active {
-  background: var(--color-primary-background-strong-active);
-  border-color: var(--color-primary-background-strong-active);
-  color: var(--color-primary-text-strong);
-  fill: var(--color-primary-icon-strong);
-}
-.PrimaryButton.PrimaryButton--standardTheme.ThemeableRectangularButtonPresentation:focus {
-  outline: none;
-}
-.PrimaryButton.PrimaryButton--standardTheme.ThemeableRectangularButtonPresentation:focus:not(
-    :focus-visible
-  ) {
-  box-shadow: none;
-}
 .PrimaryButton.PrimaryButton--inverseTheme.ThemeableRectangularButtonPresentation {
   background: #fff;
   border-color: #fff;
@@ -3079,32 +3041,6 @@ a:hover {
 }
 .SubtleButton.ThemeableRectangularButtonPresentation--large {
   font-weight: 500;
-}
-.SubtleButton.SubtleButton--standardTheme.ThemeableRectangularButtonPresentation {
-  background: var(--color-button-background-subtle);
-  border-color: var(--color-button-background-subtle);
-  color: var(--color-text-weak);
-  fill: var(--color-text-weak);
-}
-.SubtleButton.SubtleButton--standardTheme.ThemeableRectangularButtonPresentation--isEnabled:hover {
-  background: var(--color-background-hover);
-  border-color: var(--color-button-border-subtle);
-  color: var(--color-text-weak-hover);
-  fill: var(--color-text-weak-hover);
-}
-.SubtleButton.SubtleButton--standardTheme.ThemeableRectangularButtonPresentation--isEnabled:active {
-  background: var(--color-background-active);
-  border-color: var(--color-button-border-subtle);
-  color: var(--color-text-weak-hover);
-  fill: var(--color-text-weak-hover);
-}
-.SubtleButton.SubtleButton--standardTheme.ThemeableRectangularButtonPresentation:focus {
-  outline: none;
-}
-.SubtleButton.SubtleButton--standardTheme.ThemeableRectangularButtonPresentation:focus:not(
-    :focus-visible
-  ) {
-  box-shadow: none;
 }
 .SubtleButton.SubtleButton--inverseTheme.ThemeableRectangularButtonPresentation {
   background: rgba(0, 0, 0, 0);
@@ -3279,12 +3215,22 @@ a:hover {
 .BaseLink:focus:not(:focus-visible) {
   outline: none;
 }
+.FacepileButton {
+  cursor: pointer;
+  display: inline-flex;
+}
+.FacepileButton:focus {
+  outline: none;
+}
+.FacepileButton.FacepileButton--sizeSmall.FacepileButton {
+  border-radius: 14px;
+}
 .AvatarButton {
   cursor: pointer;
   display: inline-flex;
 }
-.AvatarButton.AvatarButton--sizeSmall.AvatarButton {
-  border-radius: 14px;
+.AvatarButton.AvatarButton--sizeXLarge.AvatarButton {
+  border-radius: 26px;
 }
 .AvatarButton:focus {
   outline: none;
@@ -3319,22 +3265,22 @@ a:hover {
   box-sizing: border-box;
   color: var(--color-customization-foreground);
 }
-.AvatarPhoto--small {
-  font-size: 12px;
-  height: 24px;
-  line-height: 24px;
-  min-width: 24px;
-  width: 24px;
-}
-.AvatarButton:hover .AvatarPhoto--small .AvatarPhoto-image {
-  box-shadow: inset 0 0 0 24px rgba(0, 0, 0, 0.1);
-}
 .AvatarPhoto--medium {
   font-size: 12px;
   height: 32px;
   line-height: 32px;
   min-width: 32px;
   width: 32px;
+}
+.AvatarPhoto--xlarge {
+  font-size: 16px;
+  height: 48px;
+  line-height: 48px;
+  min-width: 48px;
+  width: 48px;
+}
+.AvatarButton:hover .AvatarPhoto--xlarge .AvatarPhoto-image {
+  box-shadow: inset 0 0 0 48px rgba(0, 0, 0, 0.1);
 }
 .AvatarPhoto--color6.AvatarPhoto {
   background-color: var(--color-customization-yellow-orange-background);
@@ -3351,55 +3297,9 @@ a:hover {
   display: inline-flex;
   justify-content: center;
 }
-.AvatarButton:hover .PlaceholderAvatar {
-  background: rgba(0, 0, 0, 0);
-  background-position: center center;
-  border: 1px dashed var(--color-icon-hover);
-  fill: var(--color-icon-hover);
-  background-color: var(--color-background-hover);
-}
-.AvatarButton:active .PlaceholderAvatar {
-  background: rgba(0, 0, 0, 0);
-  background-position: center center;
-  border: 1px dashed var(--color-icon-active);
-  fill: var(--color-icon-active);
-  background-color: var(--color-background-active);
-}
 .PlaceholderAvatar--small.PlaceholderAvatar {
   height: 24px;
   width: 24px;
-}
-.SizedTextInput {
-  box-sizing: border-box;
-}
-.SizedTextInput.SizedTextInput--medium {
-  height: 36px;
-  padding-bottom: 6px;
-  padding-top: 6px;
-}
-.TextInput--medium {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-  background-color: var(--color-background-weak);
-  border-width: 1px;
-  border-style: solid;
-  border-color: var(--color-border-strong);
-  border-radius: 6px;
-  padding: 0 var(--button-padding-large);
-  box-sizing: border-box;
-}
-.TextInput--medium::placeholder {
-  color: var(--color-text-weak);
-}
-.TextInput:hover {
-  border-color: var(--color-border-hover);
-}
-.TextInput:focus {
-  border-color: var(--color-border-active);
-  outline: none;
 }
 .ScreenReaderDescription-hiddenText {
   display: none;
@@ -3430,6 +3330,9 @@ a:hover {
 .DueDate {
   font-size: 12px;
 }
+.DueDate--past {
+  color: var(--color-danger-text);
+}
 .DueDate--future {
   color: var(--color-text-weak);
 }
@@ -3451,6 +3354,9 @@ a:hover {
   align-items: center;
   display: flex;
   fill: var(--color-icon);
+}
+.DueDateWithRecurrence--past {
+  fill: var(--color-danger-text);
 }
 .ToastManager {
   bottom: 0;
@@ -3479,8 +3385,6 @@ a:hover {
 }
 .Pill {
   box-sizing: border-box;
-  -webkit-print-color-adjust: exact;
-  color-adjust: exact;
   display: block;
   font-weight: 400;
   overflow: hidden;
@@ -3490,35 +3394,13 @@ a:hover {
 .Pill.Pill--truncated {
   text-overflow: ellipsis;
 }
-.Pill.Pill--colorRed {
-  background-color: var(--color-customization-red-background);
-  color: var(--color-customization-red-foreground);
-  fill: var(--color-customization-red-foreground);
+.Pill.Pill--colorNone {
+  background-color: var(--color-customization-background-weak-deprecated);
+  color: var(--color-customization-foreground-weak);
+  fill: var(--color-customization-foreground-weak);
 }
-.Pill.Pill--colorYellowOrange {
-  background-color: var(--color-customization-yellow-orange-background);
-  color: var(--color-customization-yellow-orange-foreground);
-  fill: var(--color-customization-yellow-orange-foreground);
-}
-.Pill.Pill--colorYellow {
-  background-color: var(--color-customization-yellow-background);
-  color: var(--color-customization-yellow-foreground);
-  fill: var(--color-customization-yellow-foreground);
-}
-.Pill.Pill--colorBlueGreen {
-  background-color: var(--color-customization-blue-green-background);
-  color: var(--color-customization-blue-green-foreground);
-  fill: var(--color-customization-blue-green-foreground);
-}
-.Pill.Pill--colorAqua {
-  background-color: var(--color-customization-aqua-background);
-  color: var(--color-customization-aqua-foreground);
-  fill: var(--color-customization-aqua-foreground);
-}
-.Pill.Pill--colorPurple {
-  background-color: var(--color-customization-purple-background);
-  color: var(--color-customization-purple-foreground);
-  fill: var(--color-customization-purple-foreground);
+.Pill.Pill--colorNone.Pill--clickable:hover {
+  background-color: var(--color-customization-background-weak-hover-deprecated);
 }
 .Pill.Pill--medium {
   border-radius: var(--globule-border-radius-medium);
@@ -3534,12 +3416,18 @@ a:hover {
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.07);
   box-sizing: border-box;
   color: #fff;
-  -webkit-print-color-adjust: exact;
-  color-adjust: exact;
   display: inline-flex;
   justify-content: center;
   position: relative;
   vertical-align: top;
+}
+.Facepile {
+  padding: 2px;
+}
+.FacepileStructure {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: row-reverse;
 }
 .ColorFillIcon--colorAqua {
   fill: var(--color-customization-aqua-background);
@@ -3591,14 +3479,8 @@ a:hover {
   height: 100%;
   width: 100%;
 }
-.SortableList-itemContainer--row {
-  flex-direction: row;
-}
 .SortableList-itemContainer--column {
   flex-direction: column;
-}
-.SortableList-sortableItemContainer {
-  flex: 0 0 auto;
 }
 .SortableList-sortableItem {
   height: 100%;
@@ -3611,14 +3493,12 @@ a:hover {
     overflow: hidden;
     width: 100%;
   }
-  .SortableList-itemContainer--row,
   .SortableList-itemContainer--column {
     display: block;
     height: auto;
     overflow: hidden;
     width: 100%;
   }
-  .SortableList-itemContainer--row .SortableList-sortableItem,
   .SortableList-itemContainer--column .SortableList-sortableItem {
     display: block;
     height: auto;
@@ -3652,53 +3532,142 @@ a:hover {
 .ThemeableInteractiveCardPresentation--isEnabled.ThemeableInteractiveCardPresentation--isNotSelected:active.ThemeableCardPresentation.ThemeableCardPresentation--isValid {
   border-color: var(--color-border-active);
 }
-.ChipWithIcon {
-  border-radius: 12px;
-  height: 48px;
-  width: 48px;
-  box-shadow: inset 0 -2px rgba(0, 0, 0, 0.05);
-  align-items: center;
-  background: var(--color-customization-background);
-  -webkit-print-color-adjust: exact;
-  color-adjust: exact;
+.ThemeableInteractiveCardPresentation--isEnabled.ThemeableInteractiveCardPresentation--isSelected.ThemeableCardPresentation {
+  background: var(--color-selected-background);
+}
+.ThemeableInteractiveCardPresentation--isEnabled.ThemeableInteractiveCardPresentation--isSelected.ThemeableCardPresentation.ThemeableCardPresentation--isValid {
+  border-color: var(--color-selected-border);
+}
+.ThemeableInteractiveCardPresentation--isEnabled.ThemeableInteractiveCardPresentation--isSelected:hover.ThemeableCardPresentation {
+  background: var(--color-selected-background-hover);
+}
+.ThemeableInteractiveCardPresentation--isEnabled.ThemeableInteractiveCardPresentation--isSelected:hover.ThemeableCardPresentation.ThemeableCardPresentation--isValid {
+  border-color: var(--color-selected-border-hover);
+}
+.ThemeableInteractiveCardPresentation--isEnabled.ThemeableInteractiveCardPresentation--isSelected:active.ThemeableCardPresentation {
+  background: var(--color-selected-background-active);
+}
+.ThemeableInteractiveCardPresentation--isEnabled.ThemeableInteractiveCardPresentation--isSelected:active.ThemeableCardPresentation.ThemeableCardPresentation--isValid {
+  border-color: var(--color-selected-border-hover);
+}
+.TabNavigationBar {
   display: flex;
-  fill: #fff;
-  flex: 0 0 auto;
-  flex-direction: column;
-  justify-content: center;
 }
-.ChipWithIcon--withChipFill.ChipWithIcon--colorAqua {
-  background-color: var(--color-customization-aqua-background);
-}
-.TopbarPageHeaderStructureWithBreadcrumbs--withNavMenu {
-  min-height: 98.8px;
-}
-.TopbarPageHeaderStructureWithBreadcrumbs-topSection {
+.TabNavigationBar-list {
   display: flex;
-  flex: 1 1 auto;
-  min-height: 72px;
+}
+.TabNavigationBar-tab {
+  flex: 0 1 auto;
+}
+.TabNavigationBar-tab + .TabNavigationBar-tab {
+  margin-left: 24px;
+}
+.TabNavigationBarItem {
+  color: var(--color-text-weak);
+  cursor: default;
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 24px;
+  min-width: 1px;
+  transition-duration: 0.2s;
+  transition-property: box-shadow, color;
+  white-space: nowrap;
+}
+.TabNavigationBarItem:first-of-type {
+  margin-left: 0;
+}
+.TabNavigationBarItem-selectableTabContainer {
   min-width: 1px;
 }
-.TopbarPageHeaderStructureWithBreadcrumbs-leftElement {
+.TabNavigationBarItem-selectableTab {
+  display: block;
+  padding-bottom: 10px;
+}
+.TabNavigationBarItem-selectableTab:hover:not(
+    .TabNavigationBarItem-selectableTab--isDisabled
+  ) {
+  box-shadow: inset 0 -2px var(--color-border-active);
+  color: var(--color-text-weak-hover);
+}
+.TabNavigationBarItem-selectableTab.TabNavigationBarItem-selectableTab--isSelected {
+  box-shadow: inset 0 -2px var(--color-border-active);
+  color: var(--color-text);
+}
+.TabNavigationBarItem-selectableTab.TabNavigationBarItem-selectableTab--isClickable {
+  cursor: pointer;
+}
+.TabNavigationBarItem-link {
+  color: var(--color-text-weak);
+  text-decoration: none;
+}
+.TabNavigationBarItem-link:hover,
+.TabNavigationBarItem-link:focus {
+  color: var(--color-text-weak-hover);
+  outline: none;
+  text-decoration: none;
+}
+.TabNavigationBarWithOverflow {
+  min-width: 1px;
+  position: relative;
+  white-space: nowrap;
+}
+.TabNavigationBarWithOverflow-hiddenMeasuringArea {
+  display: flex;
+  flex-direction: row;
+  left: 999999px;
+  opacity: 0;
+  overflow: visible;
+  pointer-events: none;
+  position: fixed;
+  top: 999999px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  visibility: hidden;
+  width: 999999px;
+}
+.TabNavigationBarWithOverflow-measuringBox {
+  display: flex;
+  flex-direction: row;
+}
+.TopbarPageHeaderStructure {
+  flex: 1;
+  min-height: 72px;
+  min-width: 0;
+}
+.TopbarPageHeaderStructure-leftElement {
   align-self: center;
   margin-right: 16px;
 }
-.TopbarPageHeaderStructureWithBreadcrumbs-titleAndBreadcrumbs {
+.TopbarPageHeaderStructure-titleAndNav {
   align-items: flex-start;
   box-sizing: border-box;
   display: flex;
   flex: 1;
   flex-direction: column;
   min-width: 1px;
-  justify-content: center;
 }
-.TopbarPageHeaderStructureWithBreadcrumbs-titleAndBreadcrumbs--withEditableProjectNameAndBreadcrumb {
-  padding-top: 4px;
+@media screen and (max-width: 575px) {
+  .TopbarPageHeaderStructure-titleAndNav {
+    justify-content: center;
+  }
 }
-.TopbarPageHeaderStructureWithBreadcrumbs-titleRow {
+.TopbarPageHeaderStructure-titleRow--withNav {
+  align-items: center;
+  display: flex;
+  margin-top: 8px;
   max-width: 100%;
+  min-height: 32px;
 }
-.TopbarPageHeaderStructureWithBreadcrumbs-navMenuRow {
+@media screen and (max-width: 575px) {
+  .TopbarPageHeaderStructure-titleRow--withNav {
+    margin: 0;
+  }
+}
+.TopbarPageHeaderStructure-navMenuRow {
   align-items: flex-end;
   align-self: stretch;
   display: flex;
@@ -3706,23 +3675,24 @@ a:hover {
   justify-content: flex-start;
   max-width: 100%;
 }
-.TopbarPageHeaderStructureWithBreadcrumbs-icons {
+.TopbarPageHeaderStructure-icons {
   align-items: center;
   display: flex;
 }
-.TopbarPageHeaderStructureWithBreadcrumbs-rightChildrenWrapper {
+.TopbarPageHeaderStructure-rightChildrenWrapper {
   align-items: center;
   display: flex;
   flex: 0 0 auto;
   padding-left: 8px;
 }
 @media screen and (max-width: 575px) {
-  .TopbarPageHeaderStructureWithBreadcrumbs-rightChildrenWrapper {
-    margin-bottom: 12px;
-    padding: 0;
+  .TopbarPageHeaderStructure-rightChildrenWrapper {
+    margin-bottom: 8px;
+    margin-top: 8px;
+    padding-left: 0;
   }
 }
-.TopbarPageHeaderStructureWithBreadcrumbsHeading {
+.TopbarPageHeaderStructureHeading {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
@@ -3737,63 +3707,6 @@ a:hover {
   text-overflow: ellipsis;
   transition: color 200ms ease-in-out;
   white-space: nowrap;
-}
-.TopbarPageHeaderStructureWithBreadcrumbsHeading > * {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.TopbarPageHeaderStructureWithBreadcrumbsHeading--withEditableProjectName {
-  overflow: visible;
-}
-.PageHeaderChipButton {
-  border-radius: 12px;
-  cursor: pointer;
-  outline: none;
-  position: relative;
-}
-.PageHeaderChipButton::after {
-  bottom: 0;
-  content: "";
-  left: 0;
-  pointer-events: none;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-.PageHeaderChipButton:hover::after,
-.PageHeaderChipButton:focus::after {
-  background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 12px;
-}
-.PageHeaderChipButton:active::after {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.SubtleFavoriteStarButton.ThemeableIconButtonPresentation {
-  border-radius: 6px;
-}
-.SubtleFavoriteStarButton--notFavorited.SubtleFavoriteStarButton--colorAqua.ThemeableIconButtonPresentation {
-  background: var(--color-button-background-subtle);
-  border-color: var(--color-button-background-subtle);
-  fill: var(--color-text-weak);
-}
-.SubtleFavoriteStarButton--notFavorited.SubtleFavoriteStarButton--colorAqua.ThemeableIconButtonPresentation--isEnabled:hover {
-  background: var(--color-background-hover);
-  border-color: var(--color-button-border-subtle);
-  fill: var(--color-customization-aqua-background);
-}
-.SubtleFavoriteStarButton--notFavorited.SubtleFavoriteStarButton--colorAqua.ThemeableIconButtonPresentation--isEnabled:active {
-  background: var(--color-background-active);
-  border-color: var(--color-button-border-subtle);
-  fill: var(--color-customization-aqua-background);
-}
-.SubtleFavoriteStarButton--notFavorited.SubtleFavoriteStarButton--colorAqua.ThemeableIconButtonPresentation:focus {
-  outline: none;
-}
-.SubtleFavoriteStarButton--notFavorited.SubtleFavoriteStarButton--colorAqua.ThemeableIconButtonPresentation:focus:not(
-    :focus-visible
-  ) {
-  box-shadow: none;
 }
 .PageToolbarStructure {
   height: 40px;
@@ -3819,9 +3732,6 @@ a:hover {
   flex: 1 1;
   margin-right: auto;
   padding-right: 8px;
-}
-.PageToolbarStructure-leftChildren > *:not(:first-child):not(noscript) {
-  margin-left: 8px;
 }
 .PageToolbarStructure-rightChildren {
   align-items: center;
@@ -3887,33 +3797,33 @@ a:hover {
   min-width: 28px;
   width: 28px;
 }
-.MultiColorIcon {
-  clip-rule: evenodd;
-  fill-rule: evenodd;
-  height: 24px;
-  width: 24px;
-}
-.MultiColorIcon-path--white {
-  fill: var(--color-multi-color-icon-weak);
-}
-.MultiColorIcon-path--fadedBlack {
-  fill: var(--color-multi-color-icon-strong);
-}
-.MultiColorIcon--medium {
-  height: 24px;
-  width: 24px;
-}
-.AssigneeWithNameDisplayButton {
+.TokenizerPillBase-contents {
   align-items: center;
-  border-radius: 6px;
-  cursor: default;
   display: flex;
 }
-.AssigneeWithNameDisplayButton:not(.AssigneeWithNameDisplayButton--isDisabled) {
-  cursor: pointer;
+.TokenizerPillBase-icon {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  margin-right: 4px;
 }
-.AssigneeWithNameDisplayButton-name {
-  margin-left: 4px;
+.TokenizerPillBase-name {
+  flex: 0 1 auto;
+  min-width: 1px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.PotTokenizerPill .Pill--colorNone {
+  background-color: var(--color-customization-background-weak);
+  color: var(--color-customization-foreground-weak);
+  fill: var(--color-customization-foreground-weak);
+}
+.PotTokenizerPill .Pill--colorNone.Pill--clickable:hover {
+  background-color: var(--color-customization-background-weak-hover);
+}
+.PotTokenizerPill:focus > .PotTokenizerPill-pill.Pill--colorNone {
+  background-color: var(--color-customization-background-weak);
 }
 .SpreadsheetTaskName {
   max-height: 100%;
@@ -4020,62 +3930,56 @@ a:hover {
   transition: opacity 100ms;
   width: 4px;
 }
-.SecondarySplitDropdownMenuButtonA11y {
+.PrimarySplitDropdownMenuButtonA11y {
   align-items: center;
   display: flex;
 }
-.SecondarySplitDropdownMenuButtonA11y-leftButton.ThemeableRectangularButtonPresentation,
-.SecondarySplitDropdownMenuButtonA11y-rightButton.ThemeableRectangularButtonPresentation {
-  background: var(--color-button-background-secondary);
-  border-color: var(--color-button-border-secondary);
-  color: var(--color-text);
-  fill: var(--color-icon);
+.PrimarySplitDropdownMenuButtonA11y-leftButton.ThemeableRectangularButtonPresentation,
+.PrimarySplitDropdownMenuButtonA11y-rightButton.ThemeableRectangularButtonPresentation {
+  background: var(--color-primary-background-strong);
+  border-color: var(--color-primary-background-strong);
+  color: var(--color-primary-text-strong);
+  fill: var(--color-primary-icon-strong);
 }
-.SecondarySplitDropdownMenuButtonA11y-leftButton.ThemeableRectangularButtonPresentation--isEnabled:hover,
-.SecondarySplitDropdownMenuButtonA11y-rightButton.ThemeableRectangularButtonPresentation--isEnabled:hover {
-  background: var(--color-button-background-secondary-hover);
-  border-color: var(--color-button-border-secondary-hover);
-  color: var(--color-text);
-  fill: var(--color-button-icon-secondary-hover);
+.PrimarySplitDropdownMenuButtonA11y-leftButton.ThemeableRectangularButtonPresentation--isEnabled:hover,
+.PrimarySplitDropdownMenuButtonA11y-rightButton.ThemeableRectangularButtonPresentation--isEnabled:hover {
+  background: var(--color-primary-background-strong-hover);
+  border-color: var(--color-primary-background-strong-hover);
+  color: var(--color-primary-text-strong);
+  fill: var(--color-primary-icon-strong);
 }
-.SecondarySplitDropdownMenuButtonA11y-leftButton.ThemeableRectangularButtonPresentation--isEnabled:active,
-.SecondarySplitDropdownMenuButtonA11y-rightButton.ThemeableRectangularButtonPresentation--isEnabled:active {
-  background: var(--color-button-background-secondary-active);
-  border-color: var(--color-button-border-secondary-active);
-  color: var(--color-text);
-  fill: var(--color-button-icon-secondary-hover);
+.PrimarySplitDropdownMenuButtonA11y-leftButton.ThemeableRectangularButtonPresentation--isEnabled:active,
+.PrimarySplitDropdownMenuButtonA11y-rightButton.ThemeableRectangularButtonPresentation--isEnabled:active {
+  background: var(--color-primary-background-strong-active);
+  border-color: var(--color-primary-background-strong-active);
+  color: var(--color-primary-text-strong);
+  fill: var(--color-primary-icon-strong);
 }
-.SecondarySplitDropdownMenuButtonA11y-leftButton.ThemeableRectangularButtonPresentation:focus,
-.SecondarySplitDropdownMenuButtonA11y-rightButton.ThemeableRectangularButtonPresentation:focus {
+.PrimarySplitDropdownMenuButtonA11y-leftButton.ThemeableRectangularButtonPresentation:focus,
+.PrimarySplitDropdownMenuButtonA11y-rightButton.ThemeableRectangularButtonPresentation:focus {
   outline: none;
 }
-.SecondarySplitDropdownMenuButtonA11y-leftButton.ThemeableRectangularButtonPresentation:focus:not(
+.PrimarySplitDropdownMenuButtonA11y-leftButton.ThemeableRectangularButtonPresentation:focus:not(
     :focus-visible
   ),
-.SecondarySplitDropdownMenuButtonA11y-rightButton.ThemeableRectangularButtonPresentation:focus:not(
+.PrimarySplitDropdownMenuButtonA11y-rightButton.ThemeableRectangularButtonPresentation:focus:not(
     :focus-visible
   ) {
   box-shadow: none;
 }
-.SecondarySplitDropdownMenuButtonA11y-leftButton.ThemeableRectangularButtonPresentation--isEnabled:hover {
+.PrimarySplitDropdownMenuButtonA11y-leftButton.ThemeableRectangularButtonPresentation--isEnabled:focus {
   z-index: 0;
 }
-.SecondarySplitDropdownMenuButtonA11y-leftButton.ThemeableRectangularButtonPresentation--isEnabled:focus {
-  z-index: 1;
-}
-.SecondarySplitDropdownMenuButtonA11y-leftButton.ThemeableRectangularButtonPresentation {
+.PrimarySplitDropdownMenuButtonA11y-leftButton.ThemeableRectangularButtonPresentation {
   border-radius: 6px 0 0 6px;
 }
-.SecondarySplitDropdownMenuButtonA11y-rightButton {
-  margin-left: -1px;
+.PrimarySplitDropdownMenuButtonA11y-rightButton {
+  margin-left: 1px;
 }
-.SecondarySplitDropdownMenuButtonA11y-rightButton.ThemeableRectangularButtonPresentation--isEnabled:focus {
-  z-index: 1;
-}
-.SecondarySplitDropdownMenuButtonA11y-rightButton.ThemeableRectangularButtonPresentation--medium {
+.PrimarySplitDropdownMenuButtonA11y-rightButton.ThemeableRectangularButtonPresentation--medium {
   padding: 0 4px;
 }
-.SecondarySplitDropdownMenuButtonA11y-rightButton.ThemeableRectangularButtonPresentation {
+.PrimarySplitDropdownMenuButtonA11y-rightButton.ThemeableRectangularButtonPresentation {
   border-radius: 0 6px 6px 0;
 }
 .UnconfirmedTrialReminder {
@@ -4163,6 +4067,9 @@ a:hover {
 .SpreadsheetRow--enabled {
   transition: box-shadow 100ms ease-in-out;
 }
+.SpreadsheetRow--enabled.SpreadsheetRow--withShadedBackground {
+  background-color: var(--color-selected-background);
+}
 .SpreadsheetRow-stickyCell {
   display: flex;
   left: 0;
@@ -4171,8 +4078,34 @@ a:hover {
 .SpreadsheetRow--withRightGutter {
   padding-right: 24px;
 }
+
+.comment-popover {
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  transition: all 0.3s;
+}
+
+.comment-popover-cross-functional {
+  opacity: 0;
+  position: absolute;
+  right: 340px;
+  transition: all 0.3s;
+}
+
+.comment-popover-colabration {
+  opacity: 0;
+  position: absolute;
+  right: 170px;
+  transition: all 0.3s;
+}
+
+
 .SpreadsheetCell:hover {
   border-color: var(--color-border-hover);
+  .comment-popover, .comment-popover-cross-functional, .comment-popover-colabration {
+    opacity: 10;
+  }
 }
 .SpreadsheetCell {
   background-color: var(--color-background-weak);
@@ -4188,6 +4121,9 @@ a:hover {
 .SpreadsheetCell:hover {
   z-index: 1;
 }
+.SpreadsheetCell.SpreadsheetCell--isHighlighted:focus {
+  z-index: 2;
+}
 .SpreadsheetRow-stickyCell:hover .SpreadsheetCell {
   border-color: var(--color-border-hover);
   z-index: 300;
@@ -4198,53 +4134,18 @@ a:hover {
 .SpreadsheetCell:hover {
   background-color: var(--color-background-weak-hover-deprecated);
 }
+.SpreadsheetCell.SpreadsheetCell--withShadedBackground {
+  background-color: var(--color-selected-background);
+}
+.SpreadsheetCell.SpreadsheetCell--isHighlighted:focus {
+  border-color: var(--color-selected-border);
+  z-index: 200;
+}
 .SpreadsheetCell:focus {
   outline: none;
 }
 .SpreadsheetCell.SpreadsheetCell--withoutLeftBorder {
   border-left: 0;
-}
-.CustomPropertyEnumValueInput--editable {
-  flex: 0 1 auto;
-  min-width: 1px;
-}
-.CustomPropertyEnumValueInput-downIcon {
-  flex-shrink: 0;
-  margin-left: 8px;
-  transition-duration: 0.2s;
-  transition-property: opacity;
-  vertical-align: bottom;
-}
-.CustomPropertyEnumValueInput-button--grid
-  .CustomPropertyEnumValueInput-downIcon {
-  opacity: 0;
-}
-.CustomPropertyEnumValueInput-button:hover
-  .CustomPropertyEnumValueInput-downIcon,
-.CustomPropertyEnumValueInput-button:focus
-  .CustomPropertyEnumValueInput-downIcon {
-  opacity: 1;
-}
-.CustomPropertyEnumValueInput-button {
-  align-items: center;
-  border-radius: 6px;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: inline-flex;
-  transition-duration: 0.2s;
-  transition-property: background, border, box-shadow, color, fill;
-}
-.CustomPropertyEnumValueInput-button.CustomPropertyEnumValueInput-button--large {
-  line-height: 36px;
-  max-height: 36px;
-  min-height: 36px;
-  padding: 0 12px;
-}
-.CustomPropertyEnumValueInput-label {
-  display: flex;
-  flex-grow: 1;
-  overflow: hidden;
-  width: 100%;
 }
 .TopbarSearchFilterTokenizer {
   cursor: text;
@@ -4489,6 +4390,12 @@ a:hover {
 .GlobalTopbarStructure-noDrag {
   -webkit-app-region: no-drag;
 }
+.MyTasksHeaderFacepile {
+  display: flex;
+}
+.MyTasksHeaderFacepile-facepile {
+  margin-right: 8px;
+}
 .AddTaskDropdownButton {
   flex-shrink: 0;
   margin-right: 8px;
@@ -4496,168 +4403,8 @@ a:hover {
 .RightClickMenu-contextMenuEventListener {
   display: contents;
 }
-.PotCustomTabNavigationBar {
+.PotNavigationBar {
   flex: 1;
-}
-.PotCustomTabNavigationBar-plusDropdown {
-  margin-left: 4px;
-}
-.PotCustomTabNavigationBar-plusButton.SubtleIconButton {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  padding-bottom: 2px;
-}
-.PotReorderableTabNavigationBar {
-  display: flex;
-}
-.PotReorderableTabNavigationBar-list {
-  display: flex;
-}
-.PotReorderableTabNavigationBar-list
-  .SortableList-sortableItemContainer
-  + .SortableList-sortableItemContainer {
-  margin-left: 16px;
-}
-.PotCustomTabNavigationBarWithOverflow {
-  min-width: 1px;
-  position: relative;
-  white-space: nowrap;
-}
-.PotCustomTabNavigationBarWithOverflow-hiddenMeasuringArea {
-  display: flex;
-  flex-direction: row;
-  left: 999999px;
-  opacity: 0;
-  overflow: visible;
-  pointer-events: none;
-  position: fixed;
-  top: 999999px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  visibility: hidden;
-  width: 999999px;
-}
-.PotCustomTabNavigationBarWithOverflow-measuringBox {
-  display: flex;
-  flex-direction: row;
-}
-.PotCustomTabNavigationBarWithOverflow-overflowMenuButton {
-  margin-left: 16px;
-}
-.PotTabNavigationBarItemWithMenu {
-  color: var(--color-text-weak);
-  cursor: pointer;
-  display: flex;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: normal;
-  transition-duration: 0.2s;
-  transition-property: box-shadow, color;
-  white-space: nowrap;
-}
-.PotTabNavigationBarItemWithMenu .MiniIcon {
-  fill: var(--color-icon);
-}
-.PotTabNavigationBarItemWithMenu-linkAndMenuContainer {
-  align-items: center;
-  border-radius: 6px 6px 0 0;
-  display: flex;
-  height: 18px;
-  justify-content: center;
-  padding: 4px 4px 6px;
-}
-.PotTabNavigationBarItemWithMenu-linkAndMenuContainer:hover:not(
-    .PotTabNavigationBarItemWithMenu-linkAndMenuContainer--isDisabled
-  ) {
-  background-color: var(--color-background-medium);
-  box-shadow: inset 0 -2px var(--color-border-active);
-  color: var(--color-icon-active);
-}
-.PotTabNavigationBarItemWithMenu-linkAndMenuContainer:hover:not(
-    .PotTabNavigationBarItemWithMenu-linkAndMenuContainer--isDisabled
-  )
-  .MiniIcon {
-  fill: var(--color-icon-active);
-}
-.PotTabNavigationBarItemWithMenu-linkAndMenuContainer:hover:not(
-    .PotTabNavigationBarItemWithMenu-linkAndMenuContainer--isDisabled
-  ):not(.PotTabNavigationBarItemWithMenu-linkAndMenuContainer--isSelected) {
-  background-color: var(--color-background-medium);
-  box-shadow: inset 0 -2px var(--color-icon-disabled);
-}
-.PotTabNavigationBarItemWithMenu-linkAndMenuContainer.PotTabNavigationBarItemWithMenu-linkAndMenuContainer--isSelected {
-  box-shadow: inset 0 -2px var(--color-border-active);
-  color: var(--color-icon-active);
-}
-.PotTabNavigationBarItemWithMenu-linkAndMenuContainer.PotTabNavigationBarItemWithMenu-linkAndMenuContainer--isSelected
-  .MiniIcon {
-  fill: var(--color-icon-active);
-}
-.PotTabNavigationBarItemWithMenu-selectableTab {
-  align-items: center;
-  display: flex;
-}
-.PotTabNavigationBarItemWithMenu-selectableTab:hover:not(
-    .PotTabNavigationBarItemWithMenu-selectableTab--isDisabled
-  ) {
-  color: var(--color-icon-active);
-}
-.PotTabNavigationBarItemWithMenu-selectableTab:hover:not(
-    .PotTabNavigationBarItemWithMenu-selectableTab--isDisabled
-  )
-  .MiniIcon {
-  fill: var(--color-icon-active);
-}
-.PotTabNavigationBarItemWithMenu-selectableTab.PotTabNavigationBarItemWithMenu-selectableTab--isSelected {
-  color: var(--color-icon-active);
-}
-.PotTabNavigationBarItemWithMenu-selectableTab.PotTabNavigationBarItemWithMenu-selectableTab--isSelected
-  .MiniIcon {
-  fill: var(--color-icon-active);
-}
-.PotTabNavigationBarItemWithMenu-dropdownMenuButton {
-  background-color: var(--color-background-weak);
-}
-.PotTabNavigationBarItemWithMenu-linkAndMenuContainer:hover
-  .PotTabNavigationBarItemWithMenu-dropdownMenuButton {
-  background-color: var(--color-background-medium);
-}
-.PotTabNavigationBarItemWithMenu-dropdownMenuButton.PotTabNavigationBarItemWithMenu-dropdownMenuButton--isSelected {
-  color: var(--color-icon-active);
-}
-.PotTabNavigationBarItemWithMenu-dropdownMenuButton.PotTabNavigationBarItemWithMenu-dropdownMenuButton--isSelected
-  .MiniIcon {
-  fill: var(--color-icon-active);
-}
-.PotTabNavigationBarItemWithMenu-bodyText {
-  max-width: 200px;
-}
-.PotTabNavigationBarItemWithMenu-icon {
-  margin-right: 4px;
-}
-.PotTabNavigationBarItemWithMenu-link {
-  align-items: center;
-  color: var(--color-text-weak);
-  display: flex;
-  text-decoration: none;
-}
-.PotTabNavigationBarItemWithMenu-link.PotTabNavigationBarItemWithMenu-link--isSelected
-  + .PotTabNavigationBarItemWithMenu-dropdownMenuButton {
-  margin-left: 4px;
-}
-.PotTabNavigationBarItemWithMenu-linkAndMenuContainer:hover
-  .PotTabNavigationBarItemWithMenu-link,
-.PotTabNavigationBarItemWithMenu-link:hover,
-.PotTabNavigationBarItemWithMenu-link:focus {
-  color: var(--color-text-weak-hover);
-  outline: none;
-  text-decoration: none;
-}
-.ProjectPageToolbarHiddenChildrenWhenNoTasks-child {
-  display: flex;
-  flex-shrink: 0;
 }
 .FullWidthPageStructureWithDetailsOverlay {
   background-color: var(--color-background-weak);
@@ -4731,6 +4478,9 @@ a:hover {
   flex-grow: 1;
   height: 37px;
 }
+.SpreadsheetPlaceholderCell.SpreadsheetPlaceholderCell--withShadedBackground {
+  background-color: var(--color-selected-background);
+}
 .SpreadsheetResizeDragHandle-anchor {
   cursor: col-resize;
   height: 100%;
@@ -4739,6 +4489,26 @@ a:hover {
   top: 0;
   width: 11px;
   z-index: 100;
+}
+.SpreadsheetFacepileCell-emptyFacepileInput {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+  opacity: 0;
+}
+.SpreadsheetFacepileCell:hover .SpreadsheetFacepileCell-emptyFacepileInput,
+.SpreadsheetFacepileCell:focus .SpreadsheetFacepileCell-emptyFacepileInput {
+  opacity: 1;
+}
+.SpreadsheetFacepileCell-addCollaboratorsButton {
+  margin-left: auto;
+  opacity: 0;
+}
+.SpreadsheetFacepileCell:hover .SpreadsheetFacepileCell-addCollaboratorsButton,
+.SpreadsheetFacepileCell:focus .SpreadsheetFacepileCell-addCollaboratorsButton {
+  opacity: 1;
 }
 .SpreadsheetMutableDateCell {
   align-items: center;
@@ -4767,6 +4537,10 @@ a:hover {
   opacity: 0;
   width: 0;
 }
+.SpreadsheetCell--withShadedBackground
+  .SpreadsheetMutableDateCell-removeButtonWrapper {
+  background-color: var(--color-selected-background);
+}
 .SpreadsheetMutableDateCell-cell:hover
   .SpreadsheetMutableDateCell-removeButtonWrapper {
   opacity: 1;
@@ -4786,68 +4560,26 @@ a:hover {
   flex-grow: 1;
   height: 100%;
 }
-.SpreadsheetAssigneeCell-assignee {
-  align-items: center;
-  align-self: stretch;
-  display: flex;
-  flex: 1 1 auto;
-  justify-content: space-between;
-  margin-left: 4px;
-  min-width: 1px;
-  opacity: 0;
-  position: relative;
-}
-.SpreadsheetAssigneeCell-assignee.SpreadsheetAssigneeCell-assignee--isAlwaysVisible,
-.SpreadsheetAssigneeCell-cell:hover .SpreadsheetAssigneeCell-assignee,
-.SpreadsheetAssigneeCell-cell:focus .SpreadsheetAssigneeCell-assignee {
-  opacity: 1;
-}
-.SpreadsheetAssigneeCell-cell {
-  padding: 0 4px;
-  position: relative;
-}
-.SpreadsheetAssigneeCell-assigneeDisplay {
-  width: 100%;
-}
-.SpreadsheetAssigneeCell-removeButtonWrapper {
-  align-items: center;
-  background-color: var(--color-background-weak-hover-deprecated);
+.SpreadsheetPotsCell-clickTarget {
   cursor: pointer;
   display: flex;
-  opacity: 0;
-  width: 0;
+  height: var(--globule-height-medium);
+  width: 100%;
 }
-.SpreadsheetAssigneeCell-cell:hover
-  .SpreadsheetAssigneeCell-removeButtonWrapper {
-  opacity: 1;
-  width: auto;
+.SpreadsheetPotsCell-cellContents {
+  align-items: center;
+  display: flex;
+  pointer-events: none;
+  width: 100%;
 }
-.SpreadsheetAssigneeCell-removeButtonWrapper:active {
-  background-color: var(--color-selected-background);
+.SpreadsheetPotsCell-potPill {
+  max-width: 100%;
 }
-.SpreadsheetAssigneeCell-xMiniIcon {
-  fill: var(--color-icon);
-}
-.SpreadsheetAssigneeCell-removeButtonWrapper:hover
-  .SpreadsheetAssigneeCell-xMiniIcon {
-  fill: var(--color-icon-hover);
-}
-.SpreadsheetCustomPropertyEnumCell-spreadsheetCell {
-  padding: 0;
-  margin-right: -1px;
-  z-index: 0;
-}
-.SpreadsheetCustomPropertyEnumCell-spreadsheetCell:not(
-    .SpreadsheetCustomPropertyEnumCell-spreadsheetCell--disabled
-  ) {
-  padding: 0;
-}
-.SpreadsheetCustomPropertyEnumCell-field {
-  width: 78px;
-  flex: 1 1 auto;
-}
-.SpreadsheetCustomPropertyEnumCell-field:not(:hover):not(:focus) {
-  background-color: rgba(0, 0, 0, 0);
+.SpreadsheetTaskVisibilityCell-cellContents {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+  overflow: hidden;
 }
 .SpreadsheetTaskRow {
   display: flex;
@@ -4861,8 +4593,10 @@ a:hover {
   min-width: 1px;
 }
 .SpreadsheetTaskRow-nameOrDetailsCell,
-.SpreadsheetTaskRow-assigneeCell,
-.SpreadsheetTaskRow-dueDateCell {
+.SpreadsheetTaskRow-dueDateCell,
+.SpreadsheetTaskRow-projectsCell,
+.SpreadsheetTaskRow-taskVisibilityCell,
+.SpreadsheetTaskRow-taskCollaboratorsCell {
   justify-content: space-between;
   margin-right: -1px;
 }
@@ -4895,6 +4629,11 @@ a:hover {
 }
 .DraggableSpreadsheetTaskRow:hover .DraggableSpreadsheetTaskRow-dragHandle {
   fill: var(--color-icon);
+}
+.DraggableSpreadsheetTaskRow--withShadedBackground
+  .DraggableSpreadsheetTaskRow-dragHandle {
+  border-bottom: 1px solid var(--color-selected-background);
+  border-top: 1px solid var(--color-selected-background);
 }
 .SpreadsheetGridTaskNameAndDetailsCellGroup-completionStatus {
   flex: 0 0 auto;
@@ -5053,7 +4792,6 @@ a:hover {
   -ms-overflow-style: none;
   scrollbar-width: none;
   overflow-y: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
   width: 100%;
 }
 .SpreadsheetHeaderStructure
@@ -5097,10 +4835,6 @@ a:hover {
 }
 .SpreadsheetHeaderRow-nonDraggableEndingItemsContainer {
   padding-right: 24px;
-}
-.AiAssistantPaneButton {
-  margin-left: 12px;
-  position: relative;
 }
 @media (prefers-color-scheme: dark) {
   :root .DesignTokenThemeSelectors-theme--systemDarkMode {
@@ -5221,24 +4955,6 @@ a:hover {
   height: 50px;
   width: 100%;
 }
-.ProjectHeaderFacepile-avatar {
-  align-items: center;
-  margin-right: 4px;
-}
-@media screen and (max-width: 720px) {
-  .ProjectHeaderFacepile-avatar {
-    display: none;
-  }
-}
-.ProjectShareButton-joinOrShare {
-  margin-left: 8px;
-  vertical-align: middle;
-}
-.ProjectShareButton-icon {
-  display: flex;
-  height: 12px;
-  margin-right: 4px;
-}
 .SpreadsheetGridDropTarget {
   height: 1px;
   padding-right: 24px;
@@ -5275,7 +4991,6 @@ a:hover {
   overflow-x: hidden;
   padding-bottom: 1px;
   position: relative;
-  -webkit-transform: translate3d(0, 0, 0);
 }
 .SpreadsheetGridScroller-horizontalScroller {
   -ms-overflow-style: none;
@@ -5332,13 +5047,6 @@ a:hover {
   display: flex;
   width: 80px;
 }
-.SpreadsheetAriaColumnHeaderRow {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-}
 .SidebarItemIcon {
   align-items: center;
   display: flex;
@@ -5374,11 +5082,6 @@ a:hover {
   pointer-events: none;
   position: absolute;
   top: 0;
-}
-.HiddenColumnDropTarget {
-  box-sizing: border-box;
-  height: 4px;
-  width: 100%;
 }
 .ProjectSpreadsheetAddTaskAndAggregationRow-border {
   border-top: 1px solid var(--color-border);
@@ -5455,21 +5158,6 @@ a:hover {
   height: 37px;
   margin-right: -1px;
 }
-.ProjectSpreadsheetGridPageToolbar {
-  z-index: 600;
-}
-.ProjectSpreadsheetGridRow-assigneeAndDueDateHover:hover
-  .SpreadsheetAssigneeCell-assignee,
-.ProjectSpreadsheetGridRow-assigneeAndDueDateHover:focus
-  .SpreadsheetAssigneeCell-assignee {
-  opacity: 1;
-}
-.ProjectSpreadsheetGridRow-assigneeAndDueDateHover:hover
-  .SpreadsheetMutableDateCell,
-.ProjectSpreadsheetGridRow-assigneeAndDueDateHover:focus
-  .SpreadsheetMutableDateCell {
-  opacity: 1;
-}
 .SpreadsheetPotGridContents-taskList {
   overflow: unset;
 }
@@ -5528,6 +5216,25 @@ a:hover {
   .PotColumnName-extraActionsDropdownButton {
     display: none;
   }
+}
+.MyTasksGridPageToolbar {
+  z-index: 600;
+}
+.MyTasksSpreadsheetGridRow-unreadIndicatorContainer {
+  flex: 0 0 auto;
+  width: 30px;
+}
+.MyTasksSpreadsheetGridRow-dueDateIconHover:hover .SpreadsheetMutableDateCell,
+.MyTasksSpreadsheetGridRow-dueDateIconHover:focus .SpreadsheetMutableDateCell {
+  opacity: 1;
+}
+.MyTasksPageHeader-avatar {
+  flex-shrink: 0;
+}
+.MyTasksPageHeader-customizeMenuButtonContainer {
+  border-left: 1px solid var(--color-border);
+  margin-left: 8px;
+  padding-left: 8px;
 }
 .Sidebar {
   background-color: var(--color-navigation-background-medium);
@@ -5645,6 +5352,42 @@ a:hover {
   background: var(--color-navigation-background-active);
 }
 .SidebarNavigationLinkCard.ThemeableInteractiveCardPresentation--isNotSelected.ThemeableInteractiveCardPresentation--isEnabled.ThemeableInteractiveCardPresentation:focus:not(
+    :focus-visible
+  ):not(:hover).ThemeableCardPresentation.ThemeableCardPresentation--isValid {
+  border-color: rgba(0, 0, 0, 0);
+}
+.SidebarNavigationLinkCard.ThemeableInteractiveCardPresentation--isSelected.ThemeableInteractiveCardPresentation--isEnabled {
+  outline: none;
+}
+.SidebarNavigationLinkCard.ThemeableInteractiveCardPresentation--isSelected.ThemeableInteractiveCardPresentation--isEnabled.ThemeableCardPresentation {
+  background: var(--color-navigation-background-active);
+}
+.SidebarNavigationLinkCard.ThemeableInteractiveCardPresentation--isSelected.ThemeableInteractiveCardPresentation--isEnabled.ThemeableCardPresentation.ThemeableCardPresentation--isValid {
+  border-color: rgba(0, 0, 0, 0);
+}
+.SidebarNavigationLinkCard.ThemeableInteractiveCardPresentation--isSelected.ThemeableInteractiveCardPresentation--isEnabled:hover.ThemeableCardPresentation {
+  background: var(--color-navigation-background-active);
+}
+.SidebarNavigationLinkCard.ThemeableInteractiveCardPresentation--isSelected.ThemeableInteractiveCardPresentation--isEnabled:hover.ThemeableCardPresentation.ThemeableCardPresentation--isValid {
+  border-color: rgba(0, 0, 0, 0);
+}
+.SidebarNavigationLinkCard.ThemeableInteractiveCardPresentation--isSelected.ThemeableInteractiveCardPresentation--isEnabled:active.ThemeableCardPresentation {
+  background: var(--color-navigation-background-active);
+}
+.SidebarNavigationLinkCard.ThemeableInteractiveCardPresentation--isSelected.ThemeableInteractiveCardPresentation--isEnabled:active.ThemeableCardPresentation.ThemeableCardPresentation--isValid {
+  border-color: rgba(0, 0, 0, 0);
+}
+.SidebarNavigationLinkCard.ThemeableInteractiveCardPresentation--isSelected.ThemeableInteractiveCardPresentation--isEnabled.ThemeableInteractiveCardPresentation:focus:not(
+    :focus-visible
+  ) {
+  box-shadow: none;
+}
+.SidebarNavigationLinkCard.ThemeableInteractiveCardPresentation--isSelected.ThemeableInteractiveCardPresentation--isEnabled.ThemeableInteractiveCardPresentation:focus:not(
+    :focus-visible
+  ):not(:hover).ThemeableCardPresentation {
+  background: var(--color-navigation-background-active);
+}
+.SidebarNavigationLinkCard.ThemeableInteractiveCardPresentation--isSelected.ThemeableInteractiveCardPresentation--isEnabled.ThemeableInteractiveCardPresentation:focus:not(
     :focus-visible
   ):not(:hover).ThemeableCardPresentation.ThemeableCardPresentation--isValid {
   border-color: rgba(0, 0, 0, 0);
@@ -6037,84 +5780,22 @@ a:hover {
   position: relative;
   z-index: 0;
 }
-.ProjectInfoBanner-zIndexIncluded {
-  z-index: 200;
-}
-.ProjectPage {
+.MyTasksPage {
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
   min-height: 1px;
   position: relative;
 }
-.ProjectPage-list {
+.MyTasksPage-list {
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
   min-height: 1px;
 }
-.ProjectPage-listInner {
+.MyTasksPage-listInner {
   flex: 1 1 auto;
   min-height: 1px;
-}
-.ProjectPageHeaderProjectTitle-container {
-  overflow: visible;
-  position: relative;
-}
-.ProjectPageHeaderProjectTitle-input,
-.ProjectPageHeaderProjectTitle-shadow {
-  overflow: hidden;
-  text-rendering: optimizeSpeed;
-  vertical-align: top;
-}
-.ProjectPageHeaderProjectTitle-input {
-  font-size: 20px;
-  font-weight: 500;
-  height: 100%;
-  left: calc(-1 * 4px);
-  overflow: hidden;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: absolute;
-  text-overflow: ellipsis;
-  top: 0;
-  width: calc(100% + 4px);
-}
-@media screen and (max-width: 720px) {
-  .ProjectPageHeaderProjectTitle-input {
-    min-width: 72px;
-  }
-}
-.ProjectPageHeaderProjectTitle-shadow {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-  background-color: var(--color-background-weak);
-  border-width: 1px;
-  border-style: solid;
-  border-color: var(--color-border-strong);
-  border-radius: 6px;
-  padding: 0 var(--button-padding-large);
-  box-sizing: border-box;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 22px;
-  margin-left: calc(-1 * 4px);
-  min-height: 32px;
-  padding: 6px 4px;
-  visibility: hidden;
-  white-space: pre;
-  width: calc(100% + 4px);
-}
-.ProjectPageHeaderProjectTitle-shadow::placeholder {
-  color: var(--color-text-weak);
-}
-.ProjectPageHeader-customizeMenuButtonContainer {
-  border-left: 1px solid var(--color-border);
-  margin-left: 8px;
-  padding-left: 8px;
 }
 .DisconnectBarManager {
   padding: 4px 0;
@@ -6219,6 +5900,15 @@ a:hover {
 }
 .AsanaMain-quickAddPopOut--zIndexIncluded {
   z-index: 300;
+}
+/*! CSS Used from: Embedded */
+.SpreadsheetRow-stickyCell {
+  width: 540px;
+}
+/*! CSS Used from: Embedded */
+.SpreadsheetRow-stickyCellPlaceholder {
+  width: 540px;
+  min-width: 540px;
 }
 /*! CSS Used from: Embedded */
 .SpreadsheetRow-stickyCell {
