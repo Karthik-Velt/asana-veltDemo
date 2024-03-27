@@ -14,16 +14,16 @@ export default function YourDocument() {
       client.setDocumentId('asana-velt-demo');
       const selectionElement = client.getSelectionElement();
       selectionElement.enableLiveSelection();
-
+      const commentElement = client.getCommentElement();
+      commentElement.disableCommentPinHighlighter();
     }
   }, [client]);
 
   return (
    <div style={{ display:"flex", gap:"8px", marginRight:"16px", alignItems:"center"}}>
      <VeltPresence flockMode={true}/>
-     <VeltHuddleTool/>
-     <VeltCommentTool/>
-     <VeltSidebarButton/>
+     <VeltHuddleTool darkMode={true}/>
+     <VeltSidebarButton darkMode={true}/>
    </div>
   );
 }
